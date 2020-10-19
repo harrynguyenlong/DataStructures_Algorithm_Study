@@ -25,6 +25,7 @@
 /* Begin PBXFileReference section */
 		3DF293D8253E120B00B5F750 /* DataStructure_Algorithm_In_C++ */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "DataStructure_Algorithm_In_C++"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DF293DB253E120B00B5F750 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		3DF293E3253E126E00B5F750 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				3DF293DB253E120B00B5F750 /* main.cpp */,
+				3DF293E3253E126E00B5F750 /* README.md */,
 			);
 			path = "DataStructure_Algorithm_In_C++";
 			sourceTree = "<group>";
