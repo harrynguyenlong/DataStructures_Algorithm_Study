@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3DF293DC253E120B00B5F750 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3DF293DB253E120B00B5F750 /* main.cpp */; };
+		3DF293E9253E541600B5F750 /* SingleLinkedList.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 3DF293E5253E13A800B5F750 /* SingleLinkedList.hpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,6 +27,7 @@
 		3DF293D8253E120B00B5F750 /* DataStructure_Algorithm_In_C++ */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "DataStructure_Algorithm_In_C++"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DF293DB253E120B00B5F750 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		3DF293E3253E126E00B5F750 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		3DF293E5253E13A800B5F750 /* SingleLinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SingleLinkedList.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			children = (
 				3DF293DB253E120B00B5F750 /* main.cpp */,
 				3DF293E3253E126E00B5F750 /* README.md */,
+				3DF293E5253E13A800B5F750 /* SingleLinkedList.hpp */,
 			);
 			path = "DataStructure_Algorithm_In_C++";
 			sourceTree = "<group>";
@@ -120,6 +123,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DF293E9253E541600B5F750 /* SingleLinkedList.hpp in Sources */,
 				3DF293DC253E120B00B5F750 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

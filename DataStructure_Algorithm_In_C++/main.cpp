@@ -6,9 +6,18 @@
 //
 
 #include <iostream>
+#include "SingleLinkedList.hpp"
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    
+    LinkedList<std::string> linkedList;
+    
+    std::string firstEle = "First";
+    std::string secondEle = "Second";
+    
+    linkedList.add(firstEle);
+    linkedList.add(secondEle);
+    
+    std::cout << linkedList.getHead();
     return 0;
 }
