@@ -30,8 +30,10 @@ public:
     bool isEmpty() const;
     T getHead() const;
     void add(const T& value);
+    void addAt(const T& value, int position);
     void remove();
-    
+    int count() const;
+    void reverse();
 };
 
 template <typename T>
@@ -41,7 +43,9 @@ LinkedList<T>::LinkedList() {
 
 template <typename T>
 LinkedList<T>::~LinkedList<T>() {
-
+    while (!isEmpty()) {
+        remove();
+    }
 }
 
 template <typename T>
@@ -72,6 +76,65 @@ void LinkedList<T>::remove() {
         head = next;
         delete old;
     }
+}
+
+template <typename T>
+int LinkedList<T>::count() const {
+    if (head == NULL) {
+        return 0;
+    }
+    
+    int count = 1;
+    Node<T>* start = head;
+    
+    while (start->next != NULL) {
+        count++;
+        start = start->next;
+    }
+    
+    return count;
+}
+
+template <typename T>
+void LinkedList<T>::addAt(const T &value, int position) {
+    if ((position > (count() - 1)) || position < 0) {
+        throw "Index of out bounds";
+    }
+    
+    if (position == 0) {
+        add(value);
+        return;
+    }
+    
+    int i = 0;
+    Node<T>* node = head;
+
+    while (i < (position - 1)) {
+        node = node->next;
+        i++;
+    }
+
+    Node<T>* newNode = new Node<T>();
+    newNode->elem = value;
+    newNode->next = node->next;
+    
+    node->next = newNode;
+}
+
+template <typename T>
+void LinkedList<T>::reverse() {
+    Node<T>* current = head;
+    Node<T>* backRef = NULL;
+    Node<T>* next;
+        
+    while(current != NULL) {
+        next = current->next;
+        current->next = backRef;
+        backRef = current;
+        current = next;
+    }
+    
+    head = backRef;
 }
 
 #endif /* SingleLinkedList_hpp */

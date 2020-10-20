@@ -9,15 +9,19 @@
 #include "SingleLinkedList.hpp"
 
 int main(int argc, const char * argv[]) {
-    
     LinkedList<std::string> linkedList;
     
     std::string firstEle = "First";
     std::string secondEle = "Second";
+    std::string thirdEle = "Third";
     
     linkedList.add(firstEle);
     linkedList.add(secondEle);
+    linkedList.add(thirdEle);
+    linkedList.add("Four");
     
-    std::cout << linkedList.getHead();
+    linkedList.reverse();
+    
+    std::cout << linkedList.count();
     return 0;
 }
