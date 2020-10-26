@@ -11,22 +11,57 @@
 #include <deque>
 #include <map>
 #include "SingleLinkedList.hpp"
+#include "Tree.hpp"
 
 using std::map;
 using std::string;
 using std::cout;
+using std::vector;
 
 void runLinkedListExamples();
 void runStackExample();
 void runQueueExample();
 void runDequeExample();
 void runMapExample();
+void runVectorExample();
 
 int main(int argc, const char * argv[]) {
     
-    runMapExample();
+    //runVectorExample();
+    
+//    TreeNode<string> rootNode("Root");
+//    
+//    TreeNode<string> first("First");
+//    TreeNode<string> second("Second");
+//    TreeNode<string> third("Third");
+//    
+//    TreeNode<string> four("Four");
+//    TreeNode<string> five("Five");
+//    TreeNode<string> six("Six");
+//    
+//    first.children.push_back(four);
+//    first.children.push_back(five);
+//    third.children.push_back(six);
+//    
+//    rootNode.children.push_back(first);
+//    rootNode.children.push_back(second);
+//    rootNode.children.push_back(third);
+    auto tree = org_tree::create_org_structure("CEO");
+    tree.addSubordinate("CEO", "Deputy Director");
     
     return 0;
+}
+
+void runVectorExample() {
+    vector<string> lists;
+    lists.push_back("123");
+    lists[3] = "Four";
+    
+    string first = lists[2];
+    cout << lists[0];
+    cout << "123";
+    
+//    cout << lists[1];
 }
 
 void runMapExample() {
@@ -34,13 +69,11 @@ void runMapExample() {
     
     myMap["First"] = 40;
     myMap["second"] = 50;
-    
-    map<string, int>::iterator p;
-    p = myMap.find("First");
-    
-    cout << p->first;
-    cout << p->second;
-    cout << myMap.size();
+
+    int val = myMap["second"];
+    if (val) {
+        cout << val;
+    }
 }
 
 void runDequeExample() {
