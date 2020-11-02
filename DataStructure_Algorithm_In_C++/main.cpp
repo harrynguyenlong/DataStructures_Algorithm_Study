@@ -12,6 +12,7 @@
 #include <map>
 #include "SingleLinkedList.hpp"
 #include "Tree.hpp"
+#include "Graph.hpp"
 
 using std::map;
 using std::string;
@@ -26,28 +27,34 @@ void runMapExample();
 void runVectorExample();
 
 int main(int argc, const char * argv[]) {
-    
-    //runVectorExample();
-    
-//    TreeNode<string> rootNode("Root");
-//    
-//    TreeNode<string> first("First");
-//    TreeNode<string> second("Second");
-//    TreeNode<string> third("Third");
-//    
-//    TreeNode<string> four("Four");
-//    TreeNode<string> five("Five");
-//    TreeNode<string> six("Six");
-//    
-//    first.children.push_back(four);
-//    first.children.push_back(five);
-//    third.children.push_back(six);
-//    
-//    rootNode.children.push_back(first);
-//    rootNode.children.push_back(second);
-//    rootNode.children.push_back(third);
-    auto tree = org_tree::create_org_structure("CEO");
-    tree.addSubordinate("CEO", "Deputy Director");
+
+    graph g(7);
+
+    g.addEdge(city::LONDON, city::MOSCOW, 900);
+
+    g.addEdge(city::LONDON, city::ISTANBUL, 500);
+
+    g.addEdge(city::LONDON, city::DUBAI, 1000);
+
+    g.addEdge(city::ISTANBUL, city::MOSCOW, 1000);
+
+    g.addEdge(city::ISTANBUL, city::DUBAI, 500);
+
+    g.addEdge(city::DUBAI, city::MUMBAI, 200);
+
+    g.addEdge(city::ISTANBUL, city::SEATTLE, 1500);
+
+    g.addEdge(city::DUBAI, city::SINGAPORE, 500);
+
+    g.addEdge(city::MOSCOW, city::SEATTLE, 1000);
+
+    g.addEdge(city::MUMBAI, city::SINGAPORE, 300);
+
+    g.addEdge(city::SEATTLE, city::SINGAPORE, 700);
+
+    g.addEdge(city::SEATTLE, city::LONDON, 1800);
+
+    g.removeEdge(city::SEATTLE, city::LONDON);
     
     return 0;
 }

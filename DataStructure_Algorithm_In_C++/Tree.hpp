@@ -13,19 +13,6 @@
 using std::vector;
 using std::string;
 
-//template<typename T>
-//class TreeNode {
-//public:
-//    TreeNode() {}
-//    
-//    TreeNode(const T& value) {
-//        _value = value;
-//    }
-//    
-//    T _value;
-//    vector<TreeNode<T>> children;
-//};
-
 struct TreeNode {
     string position;
     TreeNode *first, *second;
