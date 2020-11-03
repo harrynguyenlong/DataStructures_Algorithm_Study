@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D17F1D825520E5B00D3718A /* TwoSum.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D17F1D625520E5B00D3718A /* TwoSum.cpp */; };
 		3D80CCA8254EE7FB00C8F08C /* Graph.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D80CCA6254EE7FB00C8F08C /* Graph.cpp */; };
 		3DEE0C0225462862005AE9DB /* Tree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3DEE0C0125462862005AE9DB /* Tree.cpp */; };
 		3DF293DC253E120B00B5F750 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3DF293DB253E120B00B5F750 /* main.cpp */; };
@@ -26,6 +27,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3D17F1D625520E5B00D3718A /* TwoSum.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TwoSum.cpp; sourceTree = "<group>"; };
+		3D17F1D725520E5B00D3718A /* TwoSum.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TwoSum.hpp; sourceTree = "<group>"; };
 		3D7DF8C82545FB44001EBCB2 /* Tree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Tree.hpp; sourceTree = "<group>"; };
 		3D80CCA6254EE7FB00C8F08C /* Graph.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Graph.cpp; sourceTree = "<group>"; };
 		3D80CCA7254EE7FB00C8F08C /* Graph.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Graph.hpp; sourceTree = "<group>"; };
@@ -73,6 +76,8 @@
 				3D7DF8C82545FB44001EBCB2 /* Tree.hpp */,
 				3D80CCA6254EE7FB00C8F08C /* Graph.cpp */,
 				3D80CCA7254EE7FB00C8F08C /* Graph.hpp */,
+				3D17F1D625520E5B00D3718A /* TwoSum.cpp */,
+				3D17F1D725520E5B00D3718A /* TwoSum.hpp */,
 			);
 			path = "DataStructure_Algorithm_In_C++";
 			sourceTree = "<group>";
@@ -135,6 +140,7 @@
 			files = (
 				3D80CCA8254EE7FB00C8F08C /* Graph.cpp in Sources */,
 				3DEE0C0225462862005AE9DB /* Tree.cpp in Sources */,
+				3D17F1D825520E5B00D3718A /* TwoSum.cpp in Sources */,
 				3DF293E9253E541600B5F750 /* SingleLinkedList.hpp in Sources */,
 				3DF293DC253E120B00B5F750 /* main.cpp in Sources */,
 			);

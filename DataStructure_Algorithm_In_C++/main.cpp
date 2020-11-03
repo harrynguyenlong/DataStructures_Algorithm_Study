@@ -13,6 +13,7 @@
 #include "SingleLinkedList.hpp"
 #include "Tree.hpp"
 #include "Graph.hpp"
+#include "TwoSum.hpp"
 
 using std::map;
 using std::string;
@@ -27,34 +28,9 @@ void runMapExample();
 void runVectorExample();
 
 int main(int argc, const char * argv[]) {
-
-    graph g(7);
-
-    g.addEdge(city::LONDON, city::MOSCOW, 900);
-
-    g.addEdge(city::LONDON, city::ISTANBUL, 500);
-
-    g.addEdge(city::LONDON, city::DUBAI, 1000);
-
-    g.addEdge(city::ISTANBUL, city::MOSCOW, 1000);
-
-    g.addEdge(city::ISTANBUL, city::DUBAI, 500);
-
-    g.addEdge(city::DUBAI, city::MUMBAI, 200);
-
-    g.addEdge(city::ISTANBUL, city::SEATTLE, 1500);
-
-    g.addEdge(city::DUBAI, city::SINGAPORE, 500);
-
-    g.addEdge(city::MOSCOW, city::SEATTLE, 1000);
-
-    g.addEdge(city::MUMBAI, city::SINGAPORE, 300);
-
-    g.addEdge(city::SEATTLE, city::SINGAPORE, 700);
-
-    g.addEdge(city::SEATTLE, city::LONDON, 1800);
-
-    g.removeEdge(city::SEATTLE, city::LONDON);
+    
+    vector<int> testArray{3, 2, 4};
+    auto result = twoSum(testArray, 6);
     
     return 0;
 }
